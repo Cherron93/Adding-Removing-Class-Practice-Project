@@ -1,9 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Muli:ital,wght@0,700;1,400&display=swap');
 
-:root {
+/* :root {
   --line-border-fill: #3498db;
   --line-border-empty: #e0e0e0;
-}
+} */
 
 * {
   box-sizing: border-box;
@@ -16,11 +16,79 @@ body {
   align-items: center;
   justify-content: center;
   height: 100vh;
-  overflow: hidden;
+  /* overflow: hidden; */
   margin: 0;
 }
 
-.container {
+/* .container {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  align-items: center;
+  align-content: flex-start;
+} */
+
+.box-div {
+  display: flex;
+  align-items: center;
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  align-items: center;
+  align-content: flex-start;
+}
+
+.btn-div {
+  display: flex;
+  justify-content: center;
+}
+
+.box {
+  font-size: 30px;
+  border: 3px solid black;
+  padding: 45px;
+  margin: 50px;
+  width: 200px;
+  height: 200px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-grow: 0;
+}
+
+.btn {
+  font-size: 20px;
+  font-family: muli, sans-serif;
+  border: none;
+  background-color: #e63946;
+  margin: 10px;
+  padding: 5px 15px;
+  border-radius: 7px;
+  cursor: pointer;
+}
+
+.btn:disabled {
+  cursor: not-allowed;
+  background-color: lightgrey;
+}
+
+.box.active {
+  background-color: #e63946;
+  height: 250px;
+  transition: 0.4s ease;
+}
+
+@media (min-width: 468px) {
+  .row-1 {
+    display: flex;
+  }
+
+  .row-2 {
+    display: flex;
+  }
+}
+
+/* .container {
   text-align: center;
 }
 
@@ -97,4 +165,4 @@ body {
 .btn:disabled {
   background-color: var(--line-border-empty);
   cursor: not-allowed;
-}
+} */
